@@ -1,0 +1,19 @@
+
+
+
+body::before{
+    display: block;
+    content: '';
+    height: 3.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .collapsing {
+        transition-property: height, visibility;
+        transition-duration: .35s;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
